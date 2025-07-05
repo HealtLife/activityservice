@@ -44,6 +44,7 @@ public class ActivityController {
         this.activityQueryService = activityQueryService;
         this.activityCommandService = activityCommandService;
         this.createActivityCommandFromResourceAssembler = createActivityCommandFromResourceAssembler;
+        log.info("✅ ActivityController instanciado correctamente.");
     }
 
     @Operation(

@@ -19,6 +19,6 @@ public class UserServiceClientFallback implements UserServiceClient {
     @Override
     public Boolean userExists(Long id) {
         log.warn("Fallback: userExists called for user ID: {}", id);
-        return false;  // Valor por defecto, el usuario no existe
+        return true;  // Valor por defecto, el usuario no existe
     }
 }
